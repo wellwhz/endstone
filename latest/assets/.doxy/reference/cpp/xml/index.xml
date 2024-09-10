@@ -725,13 +725,6 @@
     <member refid="classendstone_1_1PlayerJoinEvent_1a81c71ecd00651758cd7f2e31eebad892" kind="function"><name>getJoinMessage</name></member>
     <member refid="classendstone_1_1PlayerJoinEvent_1afa17a2324546ffd0cdeeb9d4ec259d6b" kind="function"><name>setJoinMessage</name></member>
   </compound>
-  <compound refid="classendstone_1_1PlayerJumpEvent" kind="class"><name>endstone::PlayerJumpEvent</name>
-    <member refid="classendstone_1_1PlayerJumpEvent_1a93bd81d122aac63d5a4c7ba68a748588" kind="variable"><name>NAME</name></member>
-    <member refid="classendstone_1_1PlayerJumpEvent_1abee420d1ca9f653d8ab6ce80fc7f1c13" kind="function"><name>PlayerJumpEvent</name></member>
-    <member refid="classendstone_1_1PlayerJumpEvent_1a9575a32d0881605ce37abe7fc7659cbc" kind="function"><name>~PlayerJumpEvent</name></member>
-    <member refid="classendstone_1_1PlayerJumpEvent_1a1239db27309d685e493a3826f529da3e" kind="function"><name>getEventName</name></member>
-    <member refid="classendstone_1_1PlayerJumpEvent_1afdd83cc5dbca481aef603989cca5c11a" kind="function"><name>isCancellable</name></member>
-  </compound>
   <compound refid="classendstone_1_1PlayerKickEvent" kind="class"><name>endstone::PlayerKickEvent</name>
     <member refid="classendstone_1_1PlayerKickEvent_1a3ad9fb66f559d36fb0e5940a5664b9dc" kind="variable"><name>NAME</name></member>
     <member refid="classendstone_1_1PlayerKickEvent_1ac8c658cd31eeb3b8aaef769927a88459" kind="variable"><name>reason_</name></member>
@@ -1383,8 +1376,6 @@
   <compound refid="player__interact__event_8h" kind="file"><name>player_interact_event.h</name>
   </compound>
   <compound refid="player__join__event_8h" kind="file"><name>player_join_event.h</name>
-  </compound>
-  <compound refid="player__jump__event_8h" kind="file"><name>player_jump_event.h</name>
   </compound>
   <compound refid="player__kick__event_8h" kind="file"><name>player_kick_event.h</name>
   </compound>

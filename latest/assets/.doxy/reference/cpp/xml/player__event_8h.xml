@@ -10,7 +10,6 @@
     <includedby refid="player__interact__actor__event_8h" local="yes">include/endstone/event/player/player_interact_actor_event.h</includedby>
     <includedby refid="player__interact__event_8h" local="yes">include/endstone/event/player/player_interact_event.h</includedby>
     <includedby refid="player__join__event_8h" local="yes">include/endstone/event/player/player_join_event.h</includedby>
-    <includedby refid="player__jump__event_8h" local="yes">include/endstone/event/player/player_jump_event.h</includedby>
     <includedby refid="player__kick__event_8h" local="yes">include/endstone/event/player/player_kick_event.h</includedby>
     <includedby refid="player__login__event_8h" local="yes">include/endstone/event/player/player_login_event.h</includedby>
     <includedby refid="player__quit__event_8h" local="yes">include/endstone/event/player/player_quit_event.h</includedby>
@@ -448,7 +447,7 @@
         <label>include/endstone/event/player/player_death_event.h</label>
         <link refid="player__death__event_8h_source"/>
       </node>
-      <node id="10">
+      <node id="9">
         <label>include/endstone/event/player/player_login_event.h</label>
         <link refid="player__login__event_8h_source"/>
       </node>
@@ -456,7 +455,7 @@
         <label>include/endstone/event/player/player_join_event.h</label>
         <link refid="player__join__event_8h_source"/>
       </node>
-      <node id="11">
+      <node id="10">
         <label>include/endstone/event/player/player_quit_event.h</label>
         <link refid="player__quit__event_8h_source"/>
       </node>
@@ -468,21 +467,17 @@
         <label>include/endstone/event/player/player_interact_actor_event.h</label>
         <link refid="player__interact__actor__event_8h_source"/>
       </node>
-      <node id="12">
+      <node id="11">
         <label>include/endstone/event/player/player_teleport_event.h</label>
         <link refid="player__teleport__event_8h_source"/>
       </node>
-      <node id="9">
+      <node id="8">
         <label>include/endstone/event/player/player_kick_event.h</label>
         <link refid="player__kick__event_8h_source"/>
       </node>
       <node id="3">
         <label>include/endstone/event/player/player_command_event.h</label>
         <link refid="player__command__event_8h_source"/>
-      </node>
-      <node id="8">
-        <label>include/endstone/event/player/player_jump_event.h</label>
-        <link refid="player__jump__event_8h_source"/>
       </node>
       <node id="1">
         <label>include/endstone/event/player/player_event.h</label>
@@ -506,8 +501,6 @@
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
         </childnode>
       </node>
       <node id="2">
