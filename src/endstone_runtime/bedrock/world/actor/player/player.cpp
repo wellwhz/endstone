@@ -23,6 +23,7 @@
 #include "bedrock/world/level/level.h"
 #include "endstone/detail/hook.h"
 #include "endstone/detail/server.h"
+#include "endstone/event/player/player_jump_event.h"
 #include "endstone/event/player/player_teleport_event.h"
 
 using endstone::detail::EndstoneServer;
@@ -128,4 +129,12 @@ int Player::getXpNeededForLevelRange(int start, int end)
         ++current;
     }
     return xp;
+}
+
+void Player::handleJumpEffects() {
+    ENDSTONE_HOOK_CALL_ORIGINAL_NAME(&Player::handleJumpEffects,__FUNCDNAME__, this);
+    auto &player = getEndstonePlayer();
+    auto &server = entt::locator<EndstoneServer>::value();
+    endstone::PlayerJumpEvent e{player};
+    server.getPluginManager().callEvent(e);
 }

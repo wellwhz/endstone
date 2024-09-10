@@ -135,6 +135,8 @@ public:
 
     static int getXpNeededForLevelRange(int start, int end);
 
+    void handleJumpEffects();
+
 private:
 public:
     [[nodiscard]] endstone::detail::EndstonePlayer &getEndstonePlayer() const;  // Endstone
