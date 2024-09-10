@@ -135,7 +135,7 @@ public:
 
     static int getXpNeededForLevelRange(int start, int end);
 
-    void handleJumpEffects();
+    ENDSTONE_HOOK void handleJumpEffects();
 
 private:
 public:
