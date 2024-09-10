@@ -131,8 +131,9 @@ int Player::getXpNeededForLevelRange(int start, int end)
     return xp;
 }
 
-void Player::handleJumpEffects() {
-    ENDSTONE_HOOK_CALL_ORIGINAL(&Player::handleJumpEffects, this);
+void Player::handleJumpEffects()
+{
+    ENDSTONE_HOOK_CALL_ORIGINAL_NAME(&Player::handleJumpEffects, __FUNCDNAME__, this);
     auto &player = getEndstonePlayer();
     auto &server = entt::locator<EndstoneServer>::value();
     endstone::PlayerJumpEvent e{player};
